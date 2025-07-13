@@ -13,9 +13,9 @@ public class Main {
         while(amountCurrent1 < amountTotal1)
         {
             amountCurrent1 = amountCurrent1 + deposit1;
+            System.out.println("Месяц " + monthCurrent1 + ", сумма накоплений равна " + amountCurrent1 + " рублей.");
             monthCurrent1++;
         }
-        System.out.println("Месяц " + monthCurrent1 + ", сумма накоплений равна " + amountCurrent1 + " рублей.");
         System.out.println("");
 
         System.out.println("Задача 2");
@@ -30,7 +30,7 @@ public class Main {
         {
             System.out.print(ii + " ");
         }
-
+        System.out.println("");
         System.out.println("");
 
         System.out.println("Задача 3");
@@ -43,8 +43,9 @@ public class Main {
         for (int year = currentYear; year < currentYear + yearCount; year++)
         {
             population = population + population * fertilityPerThousand / 1000 - mortalityPerThousand / 1000;
+            System.out.println("Год " + (currentYear + yearCount) + ", численность населения составляет " + population + ".");
         }
-        System.out.println("Год " + currentYear + yearCount + ", численность населения составляет " + population + ".");
+
         System.out.println("");
 
         System.out.println("Задача 4");
